@@ -1,0 +1,139 @@
+.about
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient( to right, #d3c5ec, #ece0ee);
+}
+ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    background-color: black;
+    height:auto;
+}
+
+li
+{ 
+    display:inline;
+  
+}
+li a{
+    display: block;
+    font-size: 35px;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    transition: 1.5s;
+}
+li a:hover
+{
+    background-color: blanchedalmond;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.hobbies
+{
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    width: 1400px;
+    height: auto;
+}
+.volleyball
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.volleyball h2
+{
+    margin-right: 30px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.volleyball span
+{
+    font-size: 30px;
+}
+
+.volleyball img
+{
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.sep
+{
+    border:none;
+    width: 15%;
+    height: 2px;
+    background-color: #000000;
+} 
+
+.calisthenics
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fdcaca;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.calisthenics h2
+{
+    margin-right: 30px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.calisthenics span
+{
+    font-size: 30px;
+}
+.calisthenics img
+{
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.running
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #559fe4;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.running h2
+{
+    margin-right: 30px;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.running span
+{
+    font-size: 30px;
+    padding-right: 30px;
+}
+.running img
+{
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
