@@ -68,3 +68,42 @@ li a:hover
 .images img:hover{
     transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    li a {
+        font-size: 25px; 
+        padding: 5px;
+    }
+
+    .introHome p {
+        font-size: 24px;
+    }
+
+    .images img {
+        width: 80%; 
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .introHome p {
+        font-size: 20px; 
+    }
+
+    .images img {
+        width: 100%; 
+        margin: 10px 0;
+    }
+}

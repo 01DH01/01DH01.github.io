@@ -137,3 +137,38 @@ li a:hover
     height: auto;
     border-radius: 10px;
 }
+@media (max-width: 768px) {
+    .volleyball, .calisthenics, .running {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .volleyball h2, .calisthenics h2, .running h2 {
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .volleyball span, .calisthenics span, .running span {
+        font-size: 24px; 
+    }
+
+    .volleyball img, .calisthenics img, .running img {
+        max-width: 90%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    li a {
+        font-size: 25px; 
+    }
+
+    .volleyball h2, .calisthenics h2, .running h2 {
+        font-size: 24px;
+    }
+
+    .volleyball img, .calisthenics img, .running img {
+        max-width: 100%; 
+        margin: 10px 0;
+    }
+}
