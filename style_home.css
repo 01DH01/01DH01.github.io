@@ -6,7 +6,6 @@ body
     background: linear-gradient( to right, #e0f7fa, #ffffff);
 }
 
-
 ul
 {
     display: flex;
@@ -14,15 +13,8 @@ ul
     justify-content: center;
     list-style-type: none;
     margin:0;
-    padding: 0;
     background-color: black;
     height:auto;
-}
-
-li
-{ 
-    display:inline;
-  
 }
 
 li a{
@@ -73,11 +65,12 @@ li a:hover
 @media (max-width: 768px) {
     ul {
         flex-direction: column;
-        padding: 0;
+        align-items: center; 
+        padding: 0%;       
+                       
     }
-
     li a {
-        font-size: 25px; 
+        font-size: 25px;
         padding: 5px;
     }
 
@@ -91,19 +84,13 @@ li a:hover
     }
 }
 
-
-@media (max-width: 480px) {
-    li a {
-        font-size: 20px;
-        padding: 5px;
-    }
-
-    .introHome p {
-        font-size: 20px; 
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .images img {
-        width: 100%; 
-        margin: 10px 0;
+        width: 80%; 
     }
 }

@@ -12,16 +12,10 @@ ul
     justify-content: center;
     list-style-type: none;
     margin:0;
-    padding: 0;
     background-color: black;
     height:auto;
 }
 
-li
-{ 
-    display:inline;
-  
-}
 li a{
     display: block;
     font-size: 35px;
@@ -38,15 +32,19 @@ li a:hover
 .container
 {
     display: flex;
+    width: 100vw;
+    min-height: 100vh;
     justify-content: center;
     height: auto;
+
 }
 .hobbies
 {
     margin-top: 40px;
     border: 5px solid #000000;
     border-radius: 10px;
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     height: auto;
 }
 .volleyball
@@ -55,19 +53,18 @@ li a:hover
     align-items: center;
     justify-content: space-around;
     background-color: #f0f0f0;
-    padding: 10px;
     border-radius: 10px;
-    margin: 10px;
+    text-align: center;
 }
 .volleyball h2
 {
-    margin-right: 30px;
+    margin: 20px;
     font-size: 35px;
-    padding-top: 10px;
 }
 .volleyball span
 {
     font-size: 30px;
+    padding-right: 20px;
 }
 
 .volleyball img
@@ -90,23 +87,22 @@ li a:hover
     align-items: center;
     justify-content: space-around;
     background-color: #fdcaca;
-    padding: 10px;
     border-radius: 10px;
-    margin: 10px;
+    text-align: center;
 }
 .calisthenics h2
 {
-    margin-right: 30px;
+    margin: 20px;
     font-size: 35px;
-    padding-top: 10px;
 }
 .calisthenics span
 {
     font-size: 30px;
+    padding-right: 20px;
 }
 .calisthenics img
 {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -116,59 +112,88 @@ li a:hover
     align-items: center;
     justify-content: space-around;
     background-color: #559fe4;
-    padding: 10px;
     border-radius: 10px;
-    margin: 10px;
+    text-align: center;
 }
 .running h2
 {
-    margin-right: 30px;
+    margin: 20px;
     font-size: 35px;
-    padding-top: 10px;
 }
 .running span
 {
     font-size: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 .running img
 {
-    max-width: 600px;
-    height: auto;
+    max-width: 35%;
     border-radius: 10px;
 }
+
 @media (max-width: 768px) {
-    .volleyball, .calisthenics, .running {
+    ul {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        padding: 0%;
     }
 
-    .volleyball h2, .calisthenics h2, .running h2 {
-        font-size: 28px;
-        margin-right: 0;
-    }
-
-    .volleyball span, .calisthenics span, .running span {
-        font-size: 24px; 
-    }
-
-    .volleyball img, .calisthenics img, .running img {
-        max-width: 90%; 
-    }
-}
-
-
-@media (max-width: 480px) {
     li a {
-        font-size: 25px; 
+        font-size: 25px; /* Smaller font size for mobile */
+        padding: 5px; /* Smaller padding */
     }
 
-    .volleyball h2, .calisthenics h2, .running h2 {
+    .volleyball
+    {
+        flex-direction: column;
+    }
+    .volleyball span
+    {
+        text-align: center;
         font-size: 24px;
+        padding: 0%;
     }
 
-    .volleyball img, .calisthenics img, .running img {
-        max-width: 100%; 
-        margin: 10px 0;
+    .volleyball h2 {
+        padding-top: 5%;
+        margin: 0%;
+        font-size: 1.8rem;
+    }
+    .calisthenics
+    {
+        flex-direction: column;
+    }
+    .calisthenics span
+    {
+        text-align: center;
+        font-size: 24px;
+        padding: 0%;
+    }
+
+    .calisthenics h2 {
+        padding-top: 5%;
+        margin: 0%;
+        font-size: 1.8rem;
+    }
+    .running
+    {
+        flex-direction: column;
+    }
+    .running span
+    {
+        text-align: center;
+        font-size: 24px;
+        padding: 0%;
+    }
+
+    .running h2 {
+        padding-top: 5%;
+        margin: 0%;
+        font-size: 1.8rem;
+    }
+    .running img
+    {
+        max-width: 100%;
+        height: auto;
     }
 }
