@@ -139,8 +139,8 @@ li a:hover
     }
 
     li a {
-        font-size: 25px; /* Smaller font size for mobile */
-        padding: 5px; /* Smaller padding */
+        font-size: 25px; 
+        padding: 5px; 
     }
 
     .volleyball
